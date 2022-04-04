@@ -1,0 +1,49 @@
+.nawigacja {
+
+background-color: $kolor-baza;
+text-align: center;
+position: fixed;
+width: 100%;
+z-index: 10;
+
+}
+
+.nawigacja__link {
+
+color: white;
+font-weight: 700;
+font-family: Montserrat, sans-serif;
+text-transform: uppercase;
+display: inline-block;
+height: 60px;
+line-height: 60px;
+padding: 0 25px;
+transition: background-color 0.2s;
+
+}
+
+.nawigacja__link:hover {
+
+background-color: $kolor-drugi;
+
+}
+
+@media screen and (max-width: 670px) {
+	
+.nawigacja__link {
+	
+	padding: 0 10px; 
+	
+}
+	
+}
+
+@media screen and (max-width: 515px) {
+	
+.nawigacja {
+	
+	display: none; 
+	
+}
+	
+}

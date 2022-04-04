@@ -1,0 +1,84 @@
+.naglowek {
+
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center; //do prawej: flex-end;//
+background-image: url(../images/hero-bg.jpg);
+background-size: cover;
+text-align: center;
+
+
+}
+
+.naglowek__tytul {
+	
+	font-size: 75px;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	
+}
+
+.naglowek__tytul::after {
+	
+	content: '';   //dla pseudoelementu obowiązkowo się to dodaje//
+	display: block;
+	height: 4px;
+	background-color: #fff;
+	width: 100px;
+	margin: 50px auto;
+	
+	
+}
+
+.naglowek__podtytul {
+	
+	font-size: 33px;
+    color: #fff;
+	font-family: Montserrat, sans-serif;
+	
+	}
+	
+.naglowek__link {
+	
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 26px;
+	display: inline-block;
+	border: 3px solid #fff;
+	padding: 10px 20px; 
+	margin-top: 40px; 
+	transition: background-color .2s;
+	
+	
+ }
+	
+	.naglowek__link:hover {
+		
+		background-color: $kolor-drugi;
+		
+}
+
+@media screen and (max-width: 670px) {
+	
+	.naglowek__tytul {
+		
+		font-size: 35px;
+		
+	} 
+	
+	.naglowek__podtytul {
+		
+		font-size: 20px;
+	}
+	
+	.naglowek__link {
+		
+		font-size: 20px;
+		
+	}
+	
+}

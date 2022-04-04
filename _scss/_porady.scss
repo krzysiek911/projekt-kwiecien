@@ -1,0 +1,84 @@
+.porady {
+	
+	background-color: #eee;
+	padding: 70px 0;
+}
+
+.porady__panel {
+	
+	max-width: 1200px;
+	margin: 0 auto 70px;
+	background-color: #fff;
+	padding: 30px;
+	position: relative;
+	
+}
+
+
+.porady__panel:last-child {
+	
+	margin-bottom: 0;
+	
+}
+
+.porady__tytul {
+	
+	font-weight: 600;
+	color: #222;
+	padding-right: 30px;
+	margin-bottom: 10px;
+	
+}
+
+.porady__nota {
+	
+	margin-bottom: 20px; 
+}
+
+.porady__przycisk-pokaz {
+	
+	border: 0;
+	background-color: $kolor-drugi;
+	color: #fff;
+	padding: 10px 15px;
+	font-family: inherit; 
+}
+
+.porady__przycisk-ukryj {
+	
+	position: absolute; 
+	right: 20px;
+	top: 20px;
+	background: none;
+	border: none;
+	font-size: 26px; 
+	display: none;
+}
+
+.porady__opis {
+	
+	display: none;
+}
+
+.porady__panel--aktywny {
+	
+	background-color: $kolor-drugi;
+	color: #fff;
+	
+}
+
+.porady__panel--aktywny .porady__opis {
+	
+	display: block;
+}
+
+.porady__panel--aktywny .porady__przycisk-pokaz {
+	
+	display: none;
+}
+
+.porady__panel--aktywny .porady__przycisk-ukryj {
+	
+	display: inline;
+	color: #fff;
+}

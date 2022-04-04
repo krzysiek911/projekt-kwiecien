@@ -1,0 +1,156 @@
+.oferta {
+	
+	background-image: url(../images/oferta-bg.jpg);
+	background-size: hover;
+	background-position: center;
+	
+	
+}
+
+.oferta__kontener {
+	
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 40px 20px; 
+	display: flex; 
+	justify-content: space-between;
+	
+}
+
+.oferta__panel {
+
+	background-color: rgba(#fff, .9);
+	width: 30%;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 80px;
+
+}
+
+.oferta__ikona { 
+
+    background-color: $kolor-baza;
+	color: #fff;
+	display: inline-block;
+	width: 120px;
+	height: 120px; 
+	line-height: 114px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 2px $kolor-baza;
+	margin-top: 30px;
+	
+	span {
+		
+		font-size: 50px;
+	}
+	
+}
+
+.oferta__tytul {
+	
+	font-size: 26px;
+	color: $kolor-baza;
+	margin: 30px 20px;
+		
+}
+
+.oferta__opis {
+	
+	display: flex;
+	transition: transform .2s;
+
+}
+
+.oferta__nota {
+	
+	flex: 0 0 100%;
+	padding: 0 20px; 
+	
+}
+
+.oferta__cena {
+	
+	flex: 0 0 100%;
+	font-size: 85px; 
+	font-family: Montserrat, sans-serif;
+	font-weight: 400; 
+	color: $kolor-baza;
+}
+
+.oferta__stawka {
+	
+	display: block;
+	font-size: 26px; 
+	margin-top: -20px; 
+	color: $kolor-baza;
+	
+}
+
+.oferta__nawigacja {
+	
+	position: absolute; 
+	left: 0; 
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	display: flex;
+	
+}
+
+.oferta__przycisk {
+	
+	display: inline-block;
+	width: 50%;
+	border: 0;
+	height: 60px;
+    font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $kolor-drugi;
+	background-color: #fff;
+	
+}
+
+.oferta__przycisk:hover {
+	
+	cursor: pointer;
+	
+}
+
+.oferta__przycisk--aktywny::before {
+	
+	content: '';
+	display: block;
+	height: 3px; 
+	background-color: $kolor-drugi;
+	position: relative;
+	top: -19px;
+	
+}
+
+@media screen and (max-width: 800px) {
+	
+	.oferta__kontener {
+		
+		display: block; 
+		
+	}
+	
+	.oferta__panel {
+		
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.oferta__panel:last-child {
+		
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+

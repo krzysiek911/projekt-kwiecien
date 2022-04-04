@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  line-heigth: 1.42; }
+
+.nawigacja {
+  background-color: #270a3a;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+.nawigacja__link {
+  color: white;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 25px;
+  transition: background-color 0.2s; }
+
+.nawigacja__link:hover {
+  background-color: #774c65; }
+
+@media screen and (max-width: 670px) {
+  .nawigacja__link {
+    padding: 0 10px; } }
+@media screen and (max-width: 515px) {
+  .nawigacja {
+    display: none; } }
+.naglowek {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  text-align: center; }
+
+.naglowek__tytul {
+  font-size: 75px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  text-transform: uppercase; }
+
+.naglowek__tytul::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: #fff;
+  width: 100px;
+  margin: 50px auto; }
+
+.naglowek__podtytul {
+  font-size: 33px;
+  color: #fff;
+  font-family: Montserrat, sans-serif; }
+
+.naglowek__link {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+  display: inline-block;
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  margin-top: 40px;
+  transition: background-color .2s; }
+
+.naglowek__link:hover {
+  background-color: #774c65; }
+
+@media screen and (max-width: 670px) {
+  .naglowek__tytul {
+    font-size: 35px; }
+
+  .naglowek__podtytul {
+    font-size: 20px; }
+
+  .naglowek__link {
+    font-size: 20px; } }
+.zajawka {
+  padding: 100px 40px;
+  text-align: center; }
+
+.zajawka__tytul {
+  font-size: 50px;
+  font-family: Montserrat, sans serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #774c65;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px 2px #774c65;
+  margin-bottom: 20px; }
+
+.zajawka__nota {
+  font-size: 26px;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.oferta {
+  background-image: url(../images/oferta-bg.jpg);
+  background-size: hover;
+  background-position: center; }
+
+.oferta__kontener {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.oferta__panel {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 80px; }
+
+.oferta__ikona {
+  background-color: #270a3a;
+  color: #fff;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 114px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #270a3a;
+  margin-top: 30px; }
+.oferta__ikona span {
+  font-size: 50px; }
+
+.oferta__tytul {
+  font-size: 26px;
+  color: #270a3a;
+  margin: 30px 20px; }
+
+.oferta__opis {
+  display: flex;
+  transition: transform .2s; }
+
+.oferta__nota {
+  flex: 0 0 100%;
+  padding: 0 20px; }
+
+.oferta__cena {
+  flex: 0 0 100%;
+  font-size: 85px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #270a3a; }
+
+.oferta__stawka {
+  display: block;
+  font-size: 26px;
+  margin-top: -20px;
+  color: #270a3a; }
+
+.oferta__nawigacja {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  display: flex; }
+
+.oferta__przycisk {
+  display: inline-block;
+  width: 50%;
+  border: 0;
+  height: 60px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #774c65;
+  background-color: #fff; }
+
+.oferta__przycisk:hover {
+  cursor: pointer; }
+
+.oferta__przycisk--aktywny::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #774c65;
+  position: relative;
+  top: -19px; }
+
+@media screen and (max-width: 800px) {
+  .oferta__kontener {
+    display: block; }
+
+  .oferta__panel {
+    width: 100%;
+    margin-bottom: 40px; }
+
+  .oferta__panel:last-child {
+    margin-bottom: 0; } }
+.porady {
+  background-color: #eee;
+  padding: 70px 0; }
+
+.porady__panel {
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  background-color: #fff;
+  padding: 30px;
+  position: relative; }
+
+.porady__panel:last-child {
+  margin-bottom: 0; }
+
+.porady__tytul {
+  font-weight: 600;
+  color: #222;
+  padding-right: 30px;
+  margin-bottom: 10px; }
+
+.porady__nota {
+  margin-bottom: 20px; }
+
+.porady__przycisk-pokaz {
+  border: 0;
+  background-color: #774c65;
+  color: #fff;
+  padding: 10px 15px;
+  font-family: inherit; }
+
+.porady__przycisk-ukryj {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  display: none; }
+
+.porady__opis {
+  display: none; }
+
+.porady__panel--aktywny {
+  background-color: #774c65;
+  color: #fff; }
+
+.porady__panel--aktywny .porady__opis {
+  display: block; }
+
+.porady__panel--aktywny .porady__przycisk-pokaz {
+  display: none; }
+
+.porady__panel--aktywny .porady__przycisk-ukryj {
+  display: inline;
+  color: #fff; }
+
+.stopka {
+  padding: 100px 40px;
+  text-align: center; }
+
+.stopka__ikona span {
+  font-size: 30px;
+  color: grey; }
+
+.stopka__licencja {
+  margin-top: 20px; }
